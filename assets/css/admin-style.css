@@ -1,0 +1,196 @@
+:root {
+  --oxyplug-proscons-color-black-004: #0000000a;
+  --oxyplug-proscons-color-black-05: #2c333880;
+
+  --oxyplug-proscons-color-white-05: #ffffff80;
+  --oxyplug-proscons-color-white: #ffffff;
+
+  --oxyplug-proscons-color-blue-dark: #0077d7;
+
+  --oxyplug-proscons-color-red-darker: #780a0a;
+  --oxyplug-proscons-color-red-dark: #b12222;
+  --oxyplug-proscons-color-red: #ff0000;
+
+  --oxyplug-proscons-color-gray-dark: #aaaaaa;
+  --oxyplug-proscons-color-gray-light-075: #ddddddbf;
+  --oxyplug-proscons-color-gray-light: #dddddd;
+}
+
+#adminmenu #toplevel_page_oxyplug-proscons-settings div.wp-menu-image.svg {
+  background-size: 24px;
+}
+
+.oxyplug-proscons-asterisk {
+  color: var(--oxyplug-proscons-color-red);
+  font-weight: 700;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+#oxyplug-proscons input[type="text"][readonly],
+#oxyplug-proscons select[readonly] {
+  background: var(--oxyplug-proscons-color-white-05);
+  border-color: var(--oxyplug-proscons-color-gray-light-075);
+  box-shadow: inset 0 1px 2px var(--oxyplug-proscons-color-black-004);
+  color: var(--oxyplug-proscons-color-black-05);
+}
+
+#oxyplug-proscons .button-danger {
+  border-color: var(--oxyplug-proscons-color-red-dark);
+  color: var(--oxyplug-proscons-color-red-dark);
+}
+
+#oxyplug-proscons .button-danger:hover {
+  border-color: var(--oxyplug-proscons-color-red-darker);
+  color: var(--oxyplug-proscons-color-red-darker);
+}
+
+#oxyplug-proscons input[type="text"],
+#oxyplug-proscons select {
+  width: calc(100% - 56px);
+}
+
+#oxyplug-proscons h3,
+#oxyplug-proscons h3 {
+  margin: 0 0 5px 0;
+}
+
+#oxyplug-proscons-cons > div,
+#oxyplug-proscons-pros > div {
+  margin-bottom: 10px;
+}
+
+#oxyplug-proscons-cons > div button,
+#oxyplug-proscons-pros > div button {
+  margin-bottom: 0;
+}
+
+#oxyplug-proscons .dashicons-trash {
+  vertical-align: text-top;
+  font-size: 18px;
+}
+
+.oxyplug-proscons-change-default {
+  font-size: 9px;
+  font-style: italic;
+  text-decoration: none;
+  border: 1px solid var(--oxyplug-proscons-color-blue-dark);
+  padding: 0 4px 1px 3px;
+  border-radius: 3px;
+}
+
+.oxyplug-proscons-change-default:hover {
+  background: var(--oxyplug-proscons-color-blue-dark);
+  color: var(--oxyplug-proscons-color-white);
+}
+
+.oxyplug-proscons-each-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.oxyplug-proscons-each-row > div,
+.oxyplug-proscons-each-row > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#oxyplug-proscons-cons > button,
+#oxyplug-proscons-pros > button {
+  min-width: 110px;
+  max-width: max-content;
+  font-weight: 700;
+  padding: 0 9px 0 0;
+}
+
+html[dir="rtl"] #oxyplug-proscons-cons > button,
+html[dir="rtl"] #oxyplug-proscons-pros > button {
+  padding: 0 0 0 9px;
+}
+
+#oxyplug-proscons-cons > button i,
+#oxyplug-proscons-pros > button i {
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+#oxyplug-proscons-save,
+#oxyplug-proscons-settings-save {
+  width: 110px;
+  padding-bottom: 2px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Settings Page Starts */
+h1.oxyplug-proscons-head-title {
+  background: var(--oxyplug-proscons-color-gray-light);
+  border-left: 5px solid var(--oxyplug-proscons-color-gray-dark);
+  padding: 10px 15px 15px 15px;
+  margin-bottom: 15px;
+  width: calc(100% - 45px);
+}
+
+html[dir="rtl"] h1.oxyplug-proscons-head-title {
+  border-left: unset;
+  border-right: 5px solid var(--oxyplug-proscons-color-gray-dark);
+}
+
+.oxyplug-proscons-h2 {
+  font-weight: bold;
+  min-width: 141px;
+  margin: 0 15px 5px 0;
+  display: inline-block;
+}
+
+.oxyplug-proscons-each-section {
+  background: var(--oxyplug-proscons-color-white);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px var(--oxyplug-proscons-color-gray-light);
+  width: calc(100% - 40px);
+}
+
+.oxyplug-proscons-each-section > div {
+  margin-bottom: 20px;
+}
+
+.oxyplug-proscons-each-section .oxyplug-proscons-template-wrap {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.oxyplug-proscons-each-section .oxyplug-proscons-template-wrap:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.oxyplug-proscons-each-section .oxyplug-proscons-template-head {
+  vertical-align: top;
+}
+
+.oxyplug-proscons-each-section .oxyplug-proscons-template-radio {
+  margin: 10px auto 20px;
+}
+
+/* Settings Page Ends */
+
+@media (min-width: 768px) {
+  .oxyplug-proscons-d-768-inline-block {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 782px) {
+  .oxyplug-proscons-each-row {
+    flex-direction: row;
+  }
+
+  #oxyplug-proscons-cons > button i,
+  #oxyplug-proscons-pros > button i {
+    vertical-align: bottom;
+    font-size: 16px;
+  }
+}

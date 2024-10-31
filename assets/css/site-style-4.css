@@ -1,0 +1,98 @@
+:root {
+  --oxyplug-proscons-color-black: #000000;
+  --oxyplug-proscons-color-gray: #e3e3e3;
+  --oxyplug-proscons-color-white: #ffffff;
+  --oxyplug-proscons-color-green: #01c61e;
+  --oxyplug-proscons-color-red: #ed0102;
+}
+
+#oxyplug-proscons-generated-list-wrap {
+  margin: 15px auto;
+  position: relative;
+  border-radius: 5px;
+  word-wrap: anywhere;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list-title {
+  text-align: center;
+  padding: 6px 6px 7px 6px;
+  font-size: 20px;
+  width: fit-content;
+  min-width: 50%;
+  margin: auto auto 15px auto;
+  font-weight: 700;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list-title:is(h2, h3, h4) {
+  padding: 9px;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list-title:is(span) {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  #oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 8px 12px 8px;
+  margin: 70px 10px 5px 10px;
+  border-radius: 8px;
+  position: relative;
+  border: 2px solid var(--oxyplug-proscons-color-gray);
+}
+
+@media (min-width: 576px) {
+  #oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list > div {
+    margin: 40px 10px 5px 10px;
+  }
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list > div > img {
+  width: 80px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--oxyplug-proscons-color-white);
+  border-radius: 50%;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list > div > p {
+  width: 100%;
+  text-align: center;
+  margin: 45px 0 20px 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--oxyplug-proscons-color-black);
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list > div > ul {
+  list-style: none;
+  padding: 0 22px;
+  margin: 0;
+  font-size: 17px;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list > div > ul li {
+  padding: 0 3px 0 0;
+  list-style: none;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-cons-list li::marker {
+  color: var(--oxyplug-proscons-color-red);
+  content: "✘ ";
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-pros-list li::marker {
+  color: var(--oxyplug-proscons-color-green);
+  content: "✔ ";
+}

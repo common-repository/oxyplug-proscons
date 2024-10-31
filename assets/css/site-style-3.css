@@ -1,0 +1,79 @@
+:root {
+  --oxyplug-proscons-color-green-light: #4db6ac;
+  --oxyplug-proscons-color-yellow: #ffd54f;
+}
+
+#oxyplug-proscons-generated-list-wrap {
+  margin: 15px auto;
+  position: relative;
+  border-radius: 5px;
+  word-wrap: anywhere;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list-title {
+  text-align: center;
+  padding: 6px 6px 7px 6px;
+  font-size: 20px;
+  width: fit-content;
+  min-width: 50%;
+  margin: auto auto 15px auto;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list-title:is(h2, h3, h4) {
+  padding: 9px;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list-title:is(span) {
+  display: block;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-pros-list-wrap {
+  border-top: 8px solid var(--oxyplug-proscons-color-green-light);
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-cons-list-wrap {
+  border-top: 8px solid var(--oxyplug-proscons-color-yellow);
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 10px;
+  margin: 0 5px;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list > div > p {
+  margin: 7px 7px 5px 7px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list > div > ul {
+  list-style: none;
+  padding: 0 22px;
+  margin: 0;
+  font-size: 17px;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list > div > ul li {
+  margin: 0;
+  padding: 0 3px 0 0;
+  list-style: none;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-cons-list li::marker {
+  color: var(--oxyplug-proscons-color-yellow);
+  content: "✘ ";
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-pros-list li::marker {
+  color: var(--oxyplug-proscons-color-green-light);
+  content: "✔ ";
+}

@@ -1,0 +1,74 @@
+:root {
+  --oxyplug-proscons-color-blue: #039be5;
+  --oxyplug-proscons-color-blue-light: #4fc3f7;
+  --oxyplug-proscons-color-blue-lighter: #e1f5fe;
+
+  --oxyplug-proscons-color-red: #e53935;
+  --oxyplug-proscons-color-red-light: #e57373;
+  --oxyplug-proscons-color-red-lighter: #fce4ec;
+}
+
+#oxyplug-proscons-generated-list-wrap {
+  margin: auto;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list-title {
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list-title:is(span) {
+  display: block;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-pros-list-wrap {
+  border-left: 7px solid var(--oxyplug-proscons-color-blue-light);
+}
+
+html[dir="rtl"] #oxyplug-proscons-generated-list-wrap #oxyplug-proscons-pros-list-wrap {
+  border-left: none;
+  border-right: 7px solid var(--oxyplug-proscons-color-blue-light);
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-cons-list-wrap {
+  border-left: 7px solid var(--oxyplug-proscons-color-red-light);
+}
+
+html[dir="rtl"] #oxyplug-proscons-generated-list-wrap #oxyplug-proscons-cons-list-wrap {
+  border-left: none;
+  border-right: 7px solid var(--oxyplug-proscons-color-red-light);
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-generated-list > div > p {
+  margin: 0 12px 3px 12px;
+}
+
+#oxyplug-proscons-generated-list-wrap ul {
+  list-style: none;
+  padding: 8px 24px 0;
+  margin: 0 0 5px 0;
+}
+
+#oxyplug-proscons-generated-list-wrap ul li {
+  list-style: none;
+  padding: 0 0 8px 0;
+  margin: 0;
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-pros-list li::marker {
+  color: var(--oxyplug-proscons-color-blue);
+  content: "✓ ";
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-cons-list li::marker {
+  color: var(--oxyplug-proscons-color-red);
+  content: "✗ ";
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-pros-list {
+  background: var(--oxyplug-proscons-color-blue-lighter);
+}
+
+#oxyplug-proscons-generated-list-wrap #oxyplug-proscons-cons-list {
+  background: var(--oxyplug-proscons-color-red-lighter);
+}
